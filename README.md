@@ -31,7 +31,7 @@ To view the website, simply visit [My Portfolio Website](https://yourportfolio.c
 
 If you'd like to run the website locally:
 
-1. Clone this repository to your local machine using `git clone https://github.com/yourusername/your-portfolio.git`
+1. Clone this repository to your local machine using `git clone https://github.com/jamescasipong/your-portfolio.git`
 2. Open the `index.html` file in your preferred web browser.
 
 ## Contributing
@@ -41,8 +41,7 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## Contact
 
 - **Email**: [jamesxcasipong@gmail.com](mailto:jamesxcasipong@gmail.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/james-casipong-65ba90244)
-- **Twitter**: [@yourtwitterhandle](https://twitter.com/ArisuJz)
+
 
 Feel free to reach out to me if you have any questions or just want to connect!
 
