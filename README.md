@@ -2,7 +2,7 @@ Sure! Here's a template for a README file for your portfolio website on GitHub:
 
 ---
 
-# Portfolio Website
+# Sample Portfolio Website
 
 Welcome to my portfolio website repository! This project showcases my skills, projects, and experiences in a visually appealing and interactive manner.
 
