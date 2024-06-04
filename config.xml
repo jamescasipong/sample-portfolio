@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget
+    android-versionCode='1'
+    id = 'com.CodePocker.NamePrinter'
+    version = '1.0.0'
+    xmlns = 'https://www.w3.org/ns/widgets'>
+
+  <name>NamePrinter</name>
+  <description>Print your name by submitting the form</description>
+  <author>CodePocker</author>
+
+  <preference name = 'orientation' value = 'portrait' />
+</widget>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Casipong</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/icon.ico" />
+    <script
+      src="https://kit.fontawesome.com/ec50004a37.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#" onclick="scrollToAbout('0')">Home</a></li>
+            <li><a href="#" onclick="scrollToAbout('1')">About</a></li>
+            <li><a href="#" onclick="scrollToAbout('2')">Services</a></li>
+            <li><a href="#" onclick="scrollToAbout('3')">Projects</a></li>
+            <li><a href="#" onclick="scrollToAbout('4')">Contact</a></li>
+            <li>
+              <a href="#" id="day-mode-toggle" onclick="btnDayNight()">
+                <i class="fa-regular fa-sun"></i>
+              </a>
+            </li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>James Casipong</span><br /></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------About---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              I have been passionate about development ever since I started
+              learning C# and Java. My interest grew when I used a system I
+              developed myself. This passion intensified when I became the
+              back-end developer for our capstone project, a role-playing game.
+              The effort I put into this project was incredibly rewarding.
+              During and after the development of the RPG game, I acquired
+              strong problem-solving skills, such as identifying error sources
+              and implementing features like quests, a shop system that involved
+              math, and interactable NPCs. I am currently in my 4th year and
+              focusing on Bootstrap, ReactJS, and PHP. I am also considering
+              learning Lua Script, as I plan to develop a Roblox game with my
+              friends as a side hobby. I am open to learning other web
+              technologies and am eager to explore game, web, and mobile
+              development. In my spare time, I enjoy playing games, watching
+              anime, and reading novels and manga.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span>
+                  <ul class="webdev">
+                    <li>C#</li>
+                    <li>PHP</li>
+                    <li>CSS</li>
+                    <li>HTML5</li>
+                    <li>MySQL</li>
+                    <li>SQL</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span>Frameworks</span>
+                  <ul style="list-style-type: circle">
+                    <li>Bootstrap</li>
+                    <li>ReactJS</li>
+                    <li>Tailwind CSS</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span>Game Engines</span>
+                  <ul style="list-style-type: circle">
+                    <li>Unity</li>
+                    <li>Roblox</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <span>Tools</span>
+                  <ul style="list-style-type: circle">
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - Current</span>
+                  <ul>
+                    <li>Work Immersion - Sysu International</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>2022 - 2023</span>
+                  <ul>
+                    <li>Customer Service - Concentrix</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2017 - 2019</span>
+                  <ul>
+                    <li>SHS - STI College Cubao</li>
+                  </ul>
+                  <span>2017 - 2024</span>
+                  <ul>
+                    <li>Tertiary - STI College Cubao</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------Services---------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              I have passion when it comes to developing application, I use
+              React to develop app specifically for android.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I am passioniate in developing website as it is satisfying to see
+              the website I've developed myself as how modern its design is.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Game Development</h2>
+            <p>
+              I have developed a game before for my capstone and my passion for
+              game-development because of that. Since then, I've begun stuying
+              how to develop games using other engines.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------Portfolio---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1>My Projects</h1>
+        <div class="portfolio-items">
+          <div class="portfolio-item">
+            <img src="images/work-1.png" alt="Portfolio Item 1" />
+            <h3>Touch Me Not</h3>
+            <p>
+              Touch Me Not: a 2D mobile RPG that brings Filipino literature to
+              life for Grade 9 students. Based on José Rizal's Noli Me Tangere,
+              this game offers an interactive journey through the story,
+              enriching players' understanding of the classic novel through
+              gameplay.
+            </p>
+            <a href="assets/Touch Me Not.apk" class="btn">Check out</a>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work-2.png" alt="Portfolio Item 2" />
+            <h3>Aether Gazer Guides</h3>
+            <p>Still ongoing.</p>
+            <a href="" class="btn">Check out</a>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work-3.png" alt="Portfolio Item 3" />
+            <h3>Wuthering Waves Libraries</h3>
+            <p>Still ongoing.</p>
+            <a href="" class="btn">Check out</a>
+          </div>
+          <div class="portfolio-item">
+            <img src="images/work-3.png" alt="Portfolio Item 3" />
+            <h3>Timeline Tracker</h3>
+            <p>Still ongoing.</p>
+            <a href="" class="btn">Check out</a>
+          </div>
+          <!-- Add more portfolio items as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------Contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="contact-form">
+          <h2>Contact Me</h2>
+          <form onsubmit="sendEmail(); ">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
