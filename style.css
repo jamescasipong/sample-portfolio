@@ -239,7 +239,7 @@ nav ul li a:hover::after {
 
 /* --------- services ---------- */
 #services {
-  padding: 300px 0;
+  padding: 250px 0;
 }
 
 #services h1 {
@@ -250,7 +250,7 @@ nav ul li a:hover::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .services-list div {
