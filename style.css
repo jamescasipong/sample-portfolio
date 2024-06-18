@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.h1-logo span {
+  color: #d6004c;
+}
+
 ::-webkit-scrollbar {
   width: 10px; /* Width of the scrollbar */
 }
@@ -99,6 +103,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 15px;
 }
 
 .logo {
