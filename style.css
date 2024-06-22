@@ -8,6 +8,7 @@
 body {
   background: #080808;
   color: #fff;
+  display: inline-block;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -191,7 +192,6 @@ nav ul li a:hover::after {
 
 .about-col-2 p {
   text-align: justify;
-  text-justify: inter-word;
   margin-top: 20px;
 }
 
@@ -311,7 +311,7 @@ nav ul li a:hover::after {
 
 .portfolio-item img {
   max-width: 100%;
-  height: auto;
+  height: 350px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -407,6 +407,15 @@ div .portfolio-items p {
   text-align: justify;
 }
 
+@media only screen and (max-width: 1200px) {
+	.portfolio-item img {
+	max-width: 100%;
+	height: auto;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px) {
   /* Adjust header text size */
   .header-text {
@@ -417,6 +426,11 @@ div .portfolio-items p {
   #header {
     background-size: auto;
     padding: 0px;
+  }
+  
+  .portfolio-item img {
+	max-width: 100%;
+	height: auto;
   }
 
   nav ul {
