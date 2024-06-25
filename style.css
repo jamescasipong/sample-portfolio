@@ -145,7 +145,7 @@ nav ul li a:hover::after {
 
 }
 
-.home-buttons button {
+.home-buttons a {
   text-align: center;
   padding-top: 15px;
   padding-right: 35px;
@@ -160,9 +160,11 @@ nav ul li a:hover::after {
   margin-right: 20px;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.home-buttons button:hover {
+.home-buttons a:hover {
 	background-color: #ff004f;
 	color: white;
 }
