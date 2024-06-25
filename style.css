@@ -448,6 +448,19 @@ div .portfolio-items p {
   text-align: justify;
 }
 
+@media only screen and (max-width: 360px) {
+	#header .header-text h1{
+		font-size: 50px;
+	}
+	
+	.about-col-2 .about-me {
+		padding: 20px;
+		font-size: 13px;
+		line-height: 1.1;
+	}
+	
+}
+
 @media only screen and (max-width: 1200px) {
 	.portfolio-item img {
 	max-width: 100%;
@@ -502,6 +515,8 @@ div .portfolio-items p {
     margin-bottom: 14px;
   }
 }
+
+
 
 
 
