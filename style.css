@@ -157,6 +157,13 @@ nav ul li a:hover::after {
   border-radius: 5px;
   color: #ff004f;  
   margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.home-buttons button:hover {
+	background-color: #ff004f;
+	color: white;
 }
 
 .header-text {
