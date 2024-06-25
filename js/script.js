@@ -177,25 +177,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  function adjustOverflow() {
-    var isAndroid = /Android/i.test(navigator.userAgent);
-    var isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
+  var stateofscroll = 0; // Initialize outside the function
 
-    if (isAndroid || isSmallScreen) {
-      stateofscroll = 1;
-      if (stateofscroll == 1) {
-        document.body.style.overflowY = "scroll";
-      }
-    } else {
-      stateofscroll = 0;
-      document.body.style.overflow = "hidden";
-    }
+function adjustOverflow() {
+  var isAndroid = /Android/i.test(navigator.userAgent);
+  var isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
+
+  if (isAndroid || isSmallScreen) {
+    stateofscroll = 1;
+    document.body.style.overflowY = "scroll"; // Set overflowY to "scroll"
+  } else {
+    stateofscroll = 0;
+    document.body.style.overflowY = "hidden"; // Reset overflowY to "hidden" if not Android or small screen
   }
+}
 
-  // Call the adjustOverflow function on page load and window resize
-  adjustOverflow();
-  window.addEventListener("resize", adjustOverflow);
-});
+// Call the adjustOverflow function on page load and window resize
+adjustOverflow();
+window.addEventListener("resize", adjustOverflow);
+
 
 // Function to check if an element is in viewport
 function isInViewport(element) {
