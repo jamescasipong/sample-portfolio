@@ -177,24 +177,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  var stateofscroll = 0; // Initialize outside the function
+var stateofscroll = 0; // Initialize outside the function
 
 function adjustOverflow() {
   var isAndroid = /Android/i.test(navigator.userAgent);
-  var isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
+  var isDesktopView = !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
-  if (isAndroid || isSmallScreen) {
+  if (isAndroid && isDesktopView) {
     stateofscroll = 1;
-    document.body.style.overflowY = "scroll"; // Set overflowY to "scroll"
+    document.body.style.overflowY = "scroll"; // Enable vertical scroll
   } else {
     stateofscroll = 0;
-    document.body.style.overflowY = "hidden"; // Reset overflowY to "hidden" if not Android or small screen
+    document.body.style.overflowY = "hidden"; // Disable vertical scroll
   }
 }
 
 // Call the adjustOverflow function on page load and window resize
 adjustOverflow();
 window.addEventListener("resize", adjustOverflow);
+
 
 
 // Function to check if an element is in viewport
