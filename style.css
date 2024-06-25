@@ -164,7 +164,7 @@ nav ul li a:hover::after {
   margin-right: 20px;
   border-width: 1px;
   cursor: pointer;
-  transition: background-color 0.15s, color 0.15s;
+  transition: background-color 0.15s, color 0.15s, transform 0.2s ease-in-out;
   display: inline-block;
   text-decoration: none;
 }
@@ -172,6 +172,7 @@ nav ul li a:hover::after {
 .home-buttons a:hover {
 	background-color: #ff004f;
 	color: white;
+	transform: scale(1.1);
 }
 
 .header-text {
