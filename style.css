@@ -510,6 +510,10 @@ div .portfolio-items p {
     padding: 0px;
   }
   
+  .home-buttons a {
+	margin-bottom: 10px;
+  }
+  
   .portfolio-item img {
 	max-width: 100%;
 	height: auto;
