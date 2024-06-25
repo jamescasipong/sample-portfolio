@@ -181,9 +181,8 @@ var stateofscroll = 0; // Initialize outside the function
 
 function adjustOverflow() {
   var isAndroid = /Android/i.test(navigator.userAgent);
-  var isDesktopView = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
-  if (isAndroid && isDesktopView) {
+  if (isAndroid) {
     stateofscroll = 1;
     document.body.style.overflowY = "scroll"; // Enable vertical scroll
   } else {
