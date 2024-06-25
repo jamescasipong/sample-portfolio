@@ -211,6 +211,11 @@ nav ul li a:hover::after {
   flex-basis: 30%;
 }
 
+#about .column ul {
+  margin-bottom: 20px;
+  
+}
+
 #about .column {
   content: "";
   display: flex;
@@ -218,10 +223,7 @@ nav ul li a:hover::after {
   
 }
 
-#about .column ul {
-  margin-bottom: 20px;
-  
-}
+
 
 #about .column div {
   float: right;
@@ -557,6 +559,18 @@ div .portfolio-items p {
 
 @media only screen and (max-width: 600px) {
   /* Adjust header text size */
+  
+  #about .column {
+    display: block; /* Change display to block for mobile view */
+    clear: both;
+  }
+
+  #about .column div {
+    float: none; /* Remove float */
+    width: auto; /* Reset width */
+  }
+  
+  
   .header-text {
     margin-top: 40%;
     font-size: 30px;
