@@ -22,7 +22,7 @@ nextSection1.scrollIntoView({ behavior: "smooth" });
 
 var aboutSection = "about";
 function scrollToAboutFunction(){
-	scollToAbout.scrollIntoView({behavior: "smooth"});
+	aboutSection.scrollIntoView({behavior: "smooth"});
 }
 
 function scrollToAbout(tabname2) {
