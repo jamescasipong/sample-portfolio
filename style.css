@@ -140,6 +140,26 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+.home-buttons {
+  margin-top: 50px;
+
+}
+
+.home-buttons button {
+  text-align: center;
+  padding-top: 15px;
+  padding-right: 30px;
+  background-color: #080808;
+  padding-left: 30px;
+  border-style: solid;
+  border-color: #ff004f;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  color: #ff004f;  
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
 .header-text {
   margin-top: 20%;
   font-size: 30px;
