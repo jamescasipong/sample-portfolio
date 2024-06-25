@@ -33,7 +33,7 @@ function scrollToAbout(tabname2) {
   closemenu();
   console.log(currentSectionIndex);
 }
-
+//Dark/Light Mode
 var indexDayLightToggle = 0;
 
 // Function to toggle between dark mode and light mode
@@ -101,7 +101,7 @@ function loadModePreference() {
 document.addEventListener("DOMContentLoaded", function() {
   loadModePreference();
 });
-
+//EndofDark/Mode
 
 var sidemenu = document.getElementById("sidemenu");
 
