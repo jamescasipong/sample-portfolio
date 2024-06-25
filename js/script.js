@@ -36,20 +36,27 @@ function scrollToAbout(tabname2) {
 
 var indexDayLightToggle = 0;
 
+// Function to toggle between dark mode and light mode
 function btnDayNight() {
   var icon = document.getElementById("day-mode-toggle");
 
-  if (indexDayLightToggle == 0) {
+  if (indexDayLightToggle === 0) {
     toggleLightMode();
-  } else if (indexDayLightToggle == 1) {
+  } else {
     toggleDarkMode();
   }
 
-  if (
-    icon.querySelector("i").classList.contains("fa-regular") &&
-    icon.querySelector("i").classList.contains("fa-sun")
-  ) {
-    // Change class to "fa-light fa-moon"
+  // Toggle icon class between fa-sun and fa-moon
+  toggleIconClass(icon);
+  
+  // Save the current mode preference to localStorage
+  saveModePreference(indexDayLightToggle);
+}
+
+// Function to toggle icon class between fa-sun and fa-moon
+function toggleIconClass(icon) {
+  if (indexDayLightToggle === 0) {
+    // Change class to "fa-regular fa-moon"
     icon.querySelector("i").classList.remove("fa-regular", "fa-sun");
     icon.querySelector("i").classList.add("fa-regular", "fa-moon");
   } else {
@@ -59,6 +66,7 @@ function btnDayNight() {
   }
 }
 
+// Function to toggle dark mode
 function toggleDarkMode() {
   document.body.classList.add("dark-mode");
   document.body.classList.remove("light-mode");
@@ -66,12 +74,34 @@ function toggleDarkMode() {
   indexDayLightToggle = 0;
 }
 
+// Function to toggle light mode
 function toggleLightMode() {
   document.body.classList.add("light-mode");
   document.body.classList.remove("dark-mode");
 
   indexDayLightToggle = 1;
 }
+
+// Function to save mode preference to localStorage
+function saveModePreference(modeIndex) {
+  localStorage.setItem("modePreference", modeIndex);
+}
+
+// Function to load mode preference from localStorage
+function loadModePreference() {
+  var savedMode = localStorage.getItem("modePreference");
+  if (savedMode === "1") {
+    toggleLightMode();
+  } else {
+    toggleDarkMode();
+  }
+}
+
+// On initial page load, load the mode preference if it exists
+document.addEventListener("DOMContentLoaded", function() {
+  loadModePreference();
+});
+
 
 var sidemenu = document.getElementById("sidemenu");
 
