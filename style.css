@@ -156,8 +156,7 @@ nav ul li a:hover::after {
   padding-bottom: 15px;
   border-radius: 5px;
   color: #ff004f;  
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .header-text {
