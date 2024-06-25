@@ -20,9 +20,10 @@ var lastScrollTime = Date.now();
 var nextSection1 = document.getElementById(sections[currentSectionIndex]);
 nextSection1.scrollIntoView({ behavior: "smooth" });
 
-var aboutSection = "about";
+const about = document.getElementById("about");
 function scrollToAboutFunction(){
-	aboutSection.scrollIntoView({behavior: "smooth"});
+	about.scrollIntoView({behavior: "smooth"});
+	currentSectionIndex++;
 }
 
 function scrollToAbout(tabname2) {
