@@ -177,21 +177,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  function adjustOverflow() {
+    var userAgent = navigator.userAgent.toLowerCase(); 
+    var isAndroid = userAgent.indexOf("android") > -1;
+	var isiOS = /iphone/.test(userAgent);
 
-function adjustOverflow() {
-  var userAgent = navigator.userAgent.toLowerCase(); 
-  var isAndroid = userAgent.indexOf("android") > -1;
-  var isIOS = /iPad|iPhone|iPod/.test(userAgent);
-
-  if (isAndroid || isIOS) {
-    stateofscroll = 1;
-    document.body.style.overflowY = "scroll"; // Enable vertical scroll
-  } else {
-    stateofscroll = 0;
-    document.body.style.overflowY = "hidden"; // Disable vertical scroll
+    if (isAndroid || isiOS) {
+      stateofscroll = 1;
+      if (stateofscroll == 1) {
+        document.body.style.overflowY = "scroll";
+      }
+    } else {
+      stateofscroll = 0;
+      document.body.style.overflow = "hidden";
+    }
   }
-}
 
+  // Call the adjustOverflow function on page load and window resize
+  adjustOverflow();
+  window.addEventListener("resize", adjustOverflow);
+});
 
 // Function to check if an element is in viewport
 function isInViewport(element) {
