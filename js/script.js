@@ -178,7 +178,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function adjustOverflow() {
-    var isAndroid = /Android/i.test(navigator.userAgent);
+    var userAgent = navigator.userAgent.toLowerCase(); 
+    var isAndroid = userAgent.indexOf("android") > -1;
 
     if (isAndroid) {
       stateofscroll = 1;
