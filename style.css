@@ -441,6 +441,23 @@ div .portfolio-items p {
   }
 }
 
+@media only screen and (max-width: 1050px) {
+	#sidemenu {
+       display: none;
+	}
+	
+	nav .fa-solid {
+	   display: block;
+	}
+	
+	nav ul .fa-solid {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+  }
+}
+
 
 
 @media only screen and (max-width: 600px) {
