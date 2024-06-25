@@ -148,11 +148,12 @@ nav ul li a:hover::after {
 .home-buttons button {
   text-align: center;
   padding-top: 15px;
-  padding-right: 30px;
+  padding-right: 35px;
   background-color: #080808;
-  padding-left: 30px;
+  padding-left: 35px;
   border-style: solid;
   border-color: #ff004f;
+  font-size: 20px;
   padding-bottom: 15px;
   border-radius: 5px;
   color: #ff004f;  
