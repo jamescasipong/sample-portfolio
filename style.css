@@ -152,8 +152,9 @@ nav ul li a:hover::after {
 .home-buttons a {
   text-align: center;
   padding-top: 15px;
-  padding-right: 35px;
+  
   background-color: #080808;
+  padding-right: 35px;
   padding-left: 35px;
   border-style: solid;
   border-color: #ff004f;
@@ -512,6 +513,8 @@ div .portfolio-items p {
   
   .home-buttons a {
 	margin-bottom: 10px;
+	padding-right: 34px;
+  padding-left: 34px;
   }
   
   .home-buttons a span {
