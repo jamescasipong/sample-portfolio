@@ -177,6 +177,7 @@ nav ul li a:hover::after {
 .header-text {
   margin-top: 20%;
   font-size: 30px;
+  text-align: center;
 }
 
 .header-text h1 {
@@ -504,6 +505,11 @@ div .portfolio-items p {
     margin-top: 40%;
     font-size: 30px;
   }
+  
+  .header-text p {
+  margin-top: 20%;
+  font-size: 18px;
+}
 
   #header {
     background-size: auto;
