@@ -187,10 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.style.overflowY = "scroll";
       }
 	  else if (isAndroid) {
-		  stateofscroll = 1;
-      if (stateofscroll == 1) {
         document.body.style.overflowY = "scroll";
-	  }
     } else {
       stateofscroll = 0;
       document.body.style.overflow = "hidden";
