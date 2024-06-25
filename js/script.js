@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function adjustOverflow() {
     var isAndroid = /Android/i.test(navigator.userAgent);
-    var isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
+    var isSmallScreen = window.matchMedia("(max-width: 600px)").matches;
 
     if (isAndroid || isSmallScreen) {
       stateofscroll = 1;
