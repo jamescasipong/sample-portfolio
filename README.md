@@ -27,24 +27,8 @@ This portfolio website serves as a central hub for showcasing my work, skills, a
 
 ## Usage
 
-To view the website, simply visit [My Portfolio Website](https://yourportfolio.com/) in your web browser.
-
-If you'd like to run the website locally:
-
-1. Clone this repository to your local machine using `git clone https://github.com/jamescasipong/your-portfolio.git`
-2. Open the `index.html` file in your preferred web browser.
-
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+To view the website, simply visit [My Portfolio Website](https://https://jcasipong-dev.vercel.app/) in your web browser.
 
 ## Contact
 
 - **Email**: [jamesxcasipong@gmail.com](mailto:jamesxcasipong@gmail.com)
-
-
-Feel free to reach out to me if you have any questions or just want to connect!
-
----
-
-Feel free to modify this template to suit your specific project and preferences!
