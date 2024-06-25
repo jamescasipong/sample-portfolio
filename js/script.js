@@ -181,9 +181,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var userAgent = navigator.userAgent.toLowerCase(); 
     var isAndroid = userAgent.indexOf("android") > -1;
 	var isiOS = /iphone/.test(userAgent);
-	var isSmallScreen = window.matchMedia("(max-width: 1300px)").matches;
 
-    if (isAndroid || isiOS || isSmallScreen) {
+    if (isAndroid || isiOS) {
       stateofscroll = 1;
       if (stateofscroll == 1) {
         document.body.style.overflowY = "scroll";
