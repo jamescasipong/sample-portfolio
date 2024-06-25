@@ -194,6 +194,8 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
+
+
 /* --------- about ---------- */
 
 #about {
@@ -569,6 +571,10 @@ div .portfolio-items p {
     float: none; /* Remove float */
     width: auto; /* Reset width */
   }
+  
+  .header-text .last-name {
+	display: none;
+}
   
   
   .header-text {
