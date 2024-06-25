@@ -181,7 +181,7 @@ var stateofscroll = 0; // Initialize outside the function
 
 function adjustOverflow() {
   var isAndroid = /Android/i.test(navigator.userAgent);
-  var isDesktopView = !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+  var isDesktopView = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
   if (isAndroid && isDesktopView) {
     stateofscroll = 1;
