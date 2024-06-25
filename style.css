@@ -522,6 +522,10 @@ div .portfolio-items p {
     padding: 0px;
   }
   
+  .services-list div {
+	  padding: 40px;
+  }
+  
   .home-buttons a {
 	margin-bottom: 20px;
 	margin-right: 0px;
