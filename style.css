@@ -175,6 +175,10 @@ nav ul li a:hover::after {
 	transform: scale(1.1);
 }
 
+.about-col-2 .about-me {
+	line-height: 1.5;
+}
+
 .header-text {
   margin-top: 20%;
   font-size: 30px;
@@ -454,9 +458,9 @@ div .portfolio-items p {
 	}
 	
 	.about-col-2 .about-me {
-		padding: 20px;
+		padding-right: 20px;
 		font-size: 13px;
-		line-height: 1.1;
+		line-height: 1.5;
 	}
 	
 }
