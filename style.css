@@ -82,6 +82,10 @@ body {
   transition: 0.5s;
 }
 
+.light-mode .home-buttons a {
+background-color: #fff;
+}
+
 .light-mode .services-list div:hover {
   background: #87ceeb;
   transform: scale(1.2, 1.2);
