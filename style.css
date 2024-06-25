@@ -442,9 +442,6 @@ div .portfolio-items p {
 }
 
 @media only screen and (max-width: 1050px) {
-	#sidemenu {
-       display: none;
-	}
 	
 	nav .fa-solid {
 	   display: block;
@@ -455,6 +452,40 @@ div .portfolio-items p {
 		top: 25px;
 		left: 25px;
 		cursor: pointer;
+  }
+  
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+  
+  nav ul {
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-2 {
+    margin-bottom: 14px;
   }
 }
 
