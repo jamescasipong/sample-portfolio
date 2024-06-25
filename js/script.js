@@ -38,7 +38,6 @@ var indexDayLightToggle = 0;
 
 // Function to toggle between dark mode and light mode
 function btnDayNight() {
-	closemenu();
   var icon = document.getElementById("day-mode-toggle");
 
   if (indexDayLightToggle === 0) {
@@ -46,12 +45,14 @@ function btnDayNight() {
   } else {
     toggleDarkMode();
   }
+  closemenu();
 
   // Toggle icon class between fa-sun and fa-moon
   toggleIconClass(icon);
   
   // Save the current mode preference to localStorage
   saveModePreference(indexDayLightToggle);
+  
 }
 
 // Function to toggle icon class between fa-sun and fa-moon
