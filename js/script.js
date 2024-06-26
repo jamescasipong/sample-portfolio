@@ -226,3 +226,104 @@ function handleScroll() {
 
 // Listen to scroll events
 window.addEventListener("scroll", handleScroll);
+
+
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to add animation class when element is in viewport
+function addAnimationOnScroll() {
+  const animatedElements = document.querySelectorAll('.animated-element');
+  const headerText = document.querySelector('.header-text'); // Selecting the header text element
+
+  function animateElements(elements) {
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  function animateHeaderText() {
+    if (isInViewport(headerText)) {
+      headerText.classList.add('active');
+    }
+  }
+
+  window.addEventListener('scroll', function() {
+    animateElements(animatedElements);
+    animateHeaderText(); // Call the function to animate header text on scroll
+  });
+
+  // Trigger once on page load if elements are already in view
+  animateElements(animatedElements);
+  animateHeaderText(); // Trigger header text animation once on page load
+}
+
+// Call the function when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  addAnimationOnScroll();
+});
+
+
+
+// Function to check if an element is in viewport
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to add animation class when element is in viewport
+function addAnimationOnScroll() {
+  const animatedTextElements = document.querySelectorAll('.animated-text');
+  const animatedButtonElements = document.querySelectorAll('.animated-button');
+  const animatedAboutCol1 = document.querySelector('.about-col-1'); // Selecting the .about-col-1 element
+  const animatedAboutCol2 = document.querySelector('.about-col-2'); // Selecting the .about-col-2 element
+
+  function animateElements(elements) {
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('active');
+      }
+    });
+  }
+
+  function animateAboutCol1() {
+    if (animatedAboutCol1 && isInViewport(animatedAboutCol1)) {
+      animatedAboutCol1.classList.add('active');
+    }
+  }
+
+  function animateAboutCol2() {
+    if (animatedAboutCol2 && isInViewport(animatedAboutCol2)) {
+      animatedAboutCol2.classList.add('active');
+    }
+  }
+
+  window.addEventListener('scroll', function() {
+    animateElements(animatedTextElements);
+    animateElements(animatedButtonElements);
+    animateAboutCol1(); // Trigger animation for .about-col-1 on scroll
+    animateAboutCol2(); // Trigger animation for .about-col-2 on scroll
+  });
+
+  // Trigger once on page load if elements are already in view
+  animateElements(animatedTextElements);
+  animateElements(animatedButtonElements);
+  animateAboutCol1(); // Trigger .about-col-1 animation once on page load
+  animateAboutCol2(); // Trigger .about-col-2 animation once on page load
+}
+
+// Call the function when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  addAnimationOnScroll();
+});
