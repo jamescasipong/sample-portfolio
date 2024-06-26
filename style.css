@@ -170,9 +170,6 @@ nav ul li a:hover::after {
   transform: scale(1.1);
 }
 
-.home-buttons a:focus {
-  opacity: 0.5; /* Example of `:active` state style */
-}
 
 
 .about-col-2 .about-me {
@@ -649,7 +646,7 @@ div .portfolio-items p {
     top: 0;
     right: -200px;
     width: 200px;
-    height: 100vh;
+    height: 100%;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
