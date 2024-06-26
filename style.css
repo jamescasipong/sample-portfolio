@@ -407,6 +407,12 @@ h1.sub-title {
   bottom: 0;
   width: 100%;
 }
+
+#footer div {
+	margin-bottom: 20px;
+  }
+  
+  
 #footer a {
   color: #ff004f;
   text-decoration: none;
