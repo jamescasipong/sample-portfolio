@@ -82,9 +82,6 @@ body {
   transition: 0.5s;
 }
 
-.light-mode .home-buttons a {
-  background-color: #fff;
-}
 
 .light-mode .services-list div:hover {
   background: #87ceeb;
@@ -152,7 +149,7 @@ nav ul li a:hover::after {
 .home-buttons a {
   text-align: center;
   padding: 15px 35px;
-  background-color: #080808;
+  background-color: transparent;
   border: 1px solid #ff004f;
   font-size: 20px;
   border-radius: 5px;
