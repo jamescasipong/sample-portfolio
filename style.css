@@ -71,6 +71,12 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.light-mode #footer {
+
+  background-color: #fff;
+}
+}
+
 .light-mode .about-col-1 img,
 .light-mode .portfolio-item img {
   box-shadow: 20px 20px 10px grey;
@@ -399,7 +405,7 @@ h1.sub-title {
 /* --------- contact ---------- */
 
 #footer {
-  background-color: transparent;
+  background-color: #080808;
   color: #ff004f;
   text-align: center;
   padding: 20px 0;
@@ -573,7 +579,6 @@ div .portfolio-items p {
   }
 
   #footer {
-    background-color: #transparent;
     color: #ff004f;
     text-align: center;
     padding: 20px 0;
