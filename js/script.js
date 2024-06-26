@@ -30,8 +30,12 @@ function scrollToAbout(tabname2) {
   var homeSection = document.getElementById(sections[tabname2]);
   homeSection.scrollIntoView({ behavior: "smooth" });
   currentSectionIndex = tabname2;
+  
   closemenu();
   console.log(currentSectionIndex);
+  
+  // Check if currentSectionIndex equals 4
+  
 }
 //Dark/Light Mode
 var indexDayLightToggle = 0;
@@ -154,7 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var currentTime = Date.now();
     var timeDiff = currentTime - lastScrollTime;
-
+	
+	
     // Only allow scrolling every 500 milliseconds to prevent rapid scrolling
     if (timeDiff < 500) {
       return;
