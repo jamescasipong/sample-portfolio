@@ -79,7 +79,7 @@ body {
 
 .light-mode .about-col-1 img,
 .light-mode .portfolio-item img {
-  box-shadow: 20px 20px 10px grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .light-mode .services-list div {
@@ -318,6 +318,8 @@ h1.sub-title {
   padding: 60px;
   font-size: 13px;
   font-weight: 300;
+    border-radius: 5px 20px 5px;
+
   border-right: 10px;
   transition: background 0.5s, transform 0.5s;
 }
