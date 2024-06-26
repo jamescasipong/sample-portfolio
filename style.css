@@ -567,13 +567,21 @@ div .portfolio-items p {
   }
 
   #footer {
-    background-color: #080808;
+    background-color: #transparent;
     color: #ff004f;
     text-align: center;
     padding: 20px 0;
     position: static;
     bottom: 0;
     width: 100%;
+  }
+  
+  #footer div {
+	margin-bottom: 20px;
+  }
+  
+  #footer p {
+	font-size: 12px;
   }
 
   #about .column div {
