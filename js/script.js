@@ -117,7 +117,7 @@ function closemenu() {
 }
 
 // Function to handle keypress events
-
+/**
 document.addEventListener("DOMContentLoaded", function () {
   var stateofscroll = 0;
 
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the adjustOverflow function on page load and window resize
   adjustOverflow();
   window.addEventListener("resize", adjustOverflow);
-});
+});*/
 
 // Function to check if an element is in viewport
 function isInViewport(element) {
