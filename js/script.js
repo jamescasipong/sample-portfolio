@@ -229,35 +229,3 @@ window.addEventListener("scroll", handleScroll);
 
 
 
-// Function to check if an element is in viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-  );
-}
-
-// Function to add animation class when element is in viewport
-function addAnimationOnScroll() {
-  const servicesSection = document.getElementById('services');
-  const portfolioSection = document.getElementById('portfolio');
-  const contactSection = document.getElementById('contact');
-
-  window.addEventListener('scroll', function() {
-    if (isInViewport(servicesSection)) {
-      servicesSection.classList.add('active');
-    }
-    if (isInViewport(portfolioSection)) {
-      portfolioSection.classList.add('active');
-    }
-    if (isInViewport(contactSection)) {
-      contactSection.classList.add('active');
-    }
-  });
-}
-
-// Call the function when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', function() {
-  addAnimationOnScroll();
-});
