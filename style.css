@@ -83,8 +83,8 @@ body {
 }
 
 .light-mode .services-list div {
-  background: #c404ebe0;
-  box-shadow: 20px 20px 10px grey;
+  background: #FF3272;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transition: 0.5s;
 }
 
@@ -409,7 +409,7 @@ h1.sub-title {
   color: #ff004f;
   text-align: center;
   padding: 20px 0;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
 }
@@ -583,7 +583,6 @@ div .portfolio-items p {
     color: #ff004f;
     text-align: center;
     padding: 20px 0;
-    position: static;
     bottom: 0;
     width: 100%;
   }
