@@ -21,21 +21,20 @@ var nextSection1 = document.getElementById(sections[currentSectionIndex]);
 nextSection1.scrollIntoView({ behavior: "smooth" });
 
 const about = document.getElementById("about");
-function scrollToAboutFunction(){
-	about.scrollIntoView({behavior: "smooth"});
-	currentSectionIndex++;
+function scrollToAboutFunction() {
+  about.scrollIntoView({ behavior: "smooth" });
+  currentSectionIndex++;
 }
 
 function scrollToAbout(tabname2) {
   var homeSection = document.getElementById(sections[tabname2]);
   homeSection.scrollIntoView({ behavior: "smooth" });
   currentSectionIndex = tabname2;
-  
+
   closemenu();
   console.log(currentSectionIndex);
-  
+
   // Check if currentSectionIndex equals 4
-  
 }
 //Dark/Light Mode
 var indexDayLightToggle = 0;
@@ -53,10 +52,9 @@ function btnDayNight() {
 
   // Toggle icon class between fa-sun and fa-moon
   toggleIconClass(icon);
-  
+
   // Save the current mode preference to localStorage
   saveModePreference(indexDayLightToggle);
-  
 }
 
 // Function to toggle icon class between fa-sun and fa-moon
@@ -104,7 +102,7 @@ function loadModePreference() {
 }
 
 // On initial page load, load the mode preference if it exists
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   loadModePreference();
 });
 //EndofDark/Mode
@@ -158,8 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var currentTime = Date.now();
     var timeDiff = currentTime - lastScrollTime;
-	
-	
+
     // Only allow scrolling every 500 milliseconds to prevent rapid scrolling
     if (timeDiff < 500) {
       return;
@@ -183,9 +180,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function adjustOverflow() {
-    var userAgent = navigator.userAgent.toLowerCase(); 
+    var userAgent = navigator.userAgent.toLowerCase();
     var isAndroid = userAgent.indexOf("android") > -1;
-	var isiOS = /iphone/.test(userAgent);
+    var isiOS = /iphone/.test(userAgent);
 
     if (isAndroid || isiOS) {
       stateofscroll = 1;
