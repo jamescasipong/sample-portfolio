@@ -151,18 +151,13 @@ nav ul li a:hover::after {
 
 .home-buttons a {
   text-align: center;
-  padding-top: 15px;
+  padding: 15px 35px;
   background-color: #080808;
-  padding-right: 35px;
-  padding-left: 35px;
-  border-style: solid;
-  border-color: #ff004f;
+  border: 1px solid #ff004f;
   font-size: 20px;
-  padding-bottom: 15px;
   border-radius: 5px;
-  color: #ff004f;  
+  color: #ff004f;
   margin-right: 20px;
-  border-width: 1px;
   cursor: pointer;
   transition: background-color 0.15s, color 0.15s, transform 0.2s ease-in-out;
   display: inline-block;
@@ -170,10 +165,15 @@ nav ul li a:hover::after {
 }
 
 .home-buttons a:hover {
-	background-color: #ff004f;
-	color: white;
-	transform: scale(1.1);
+  background-color: #ff004f;
+  color: white;
+  transform: scale(1.1);
 }
+
+.home-buttons a:focus {
+  opacity: 0.5; /* Example of `:active` state style */
+}
+
 
 .about-col-2 .about-me {
 	line-height: 1.5;
@@ -413,8 +413,30 @@ h1.sub-title {
 }
 
 /* --------- contact ---------- */
+
+#footer {
+      background-color: #080808;
+      color: #ff004f;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    #footer a {
+      color: #ff004f;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+    #footer a:hover {
+      opacity: 0.7;
+    }
+	
+	
 #contact {
   padding: 250px 0;
+  height: auto;
   color: #fff;
 }
 
@@ -565,6 +587,17 @@ div .portfolio-items p {
   #about .column {
     display: block; /* Change display to block for mobile view */
     clear: both;
+  }
+  
+  #footer {
+	  background-color: #080808;
+      color: #ff004f;
+      text-align: center;
+      padding: 20px 0;
+      position: static;
+      bottom: 0;
+      width: 100%;
+	  
   }
 
   #about .column div {
