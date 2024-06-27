@@ -39,15 +39,17 @@ app.post('/send-email', (req, res) => {
   };
 
   // Send email
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-      res.status(500).send('Error: Unable to send email.');
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.redirect('/send-email-success.html');
-    }
-  });
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+        if (err) {
+            console.error(err);
+            reject(err);
+        } else {
+            console.log(info);
+            resolve(info);
+        }
+    });
 });
 
 // Start server
