@@ -434,7 +434,8 @@ h1.sub-title {
 }
 
 #contact {
-  padding: 250px 0;
+  padding-top: 250px;
+  margin-bottom: 100px;
   height: auto;
   color: #fff;
 }
