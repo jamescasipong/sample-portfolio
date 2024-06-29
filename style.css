@@ -437,7 +437,7 @@ h1.sub-title {
   margin-bottom: 20px;
 }
 
-.btn {
+#portfolio .btn {
   display: inline-block;
   padding: 15px 22px;
   background-color: #ff004f;
@@ -564,6 +564,11 @@ div .portfolio-items p {
 
   #portfolio .portfolio-item p {
     font-size: 11px;
+  }
+  
+  #portfolio .btn {
+	font-size: 12px;
+	padding: 12px 18px;
   }
 }
 
