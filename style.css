@@ -31,6 +31,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 2px;
+  opacity: 0.5;  /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -553,7 +554,8 @@ div .portfolio-items p {
 	.about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
-	max-width: 250px;
+	max-width: 270px;
+	margin-right: 5px;
 	padding: 5px auto;
   }
   
