@@ -556,6 +556,7 @@ div .portfolio-items p {
     line-height: 1.5;
 	max-width: 270px;
 	margin-right: 5px;
+	height:auto;
 	padding: 5px auto;
   }
   
