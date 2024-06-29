@@ -551,17 +551,19 @@ div .portfolio-items p {
 }
 
 @media only screen and (max-width: 320px){
-	#about {
-	
-	padding: 80px 20px;
-		
-	}
+
 	.about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
 	max-width: 100%;
 	height:auto;
 	padding: 5px auto;
+	}
+	
+	body, html {
+		height: 100%;
+		display: block;
+	}
   }
   
   .about-col-2 p {
