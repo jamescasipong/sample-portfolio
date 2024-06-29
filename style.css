@@ -551,6 +551,10 @@ div .portfolio-items p {
 }
 
 @media only screen and (max-width: 320px){
+	
+	.aboutdiv {
+		padding: 5px;
+	}
 	.about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
