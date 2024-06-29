@@ -414,6 +414,8 @@ h1.sub-title {
 .portfolio-item p {
   font-size: 16px;
   line-height: 1.5;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-bottom: 20px;
 }
 
@@ -559,12 +561,17 @@ div .portfolio-items p {
   nav .fa-solid {
     display: block;
   }
+  
+  .portfolio-item p {
+	  padding: 0;
+  }
 
   nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
+	
   }
 
   nav ul li {
@@ -609,6 +616,8 @@ div .portfolio-items p {
     display: block; /* Change display to block for mobile view */
     clear: both;
   }
+  
+  
 
   #footer {
     color: #ff004f;
