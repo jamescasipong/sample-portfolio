@@ -8,7 +8,6 @@
 body, html {
   overflow-x: hidden; /* Prevents horizontal scroll */
   height: 100%;
-
   /* Ensures full height */
 }
 
@@ -555,13 +554,10 @@ div .portfolio-items p {
   }
 
   .about-col-2 .about-me {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
   }
   
-  .about-col-2 {
-	
-  }
 
   .services-list p {
     font-size: 12px;
