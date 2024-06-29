@@ -554,8 +554,7 @@ div .portfolio-items p {
 	.about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
-	max-width: 270px;
-	margin-right: 5px;
+	max-width: 100%;
 	height:auto;
 	padding: 5px auto;
   }
