@@ -30,7 +30,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -551,7 +551,7 @@ div .portfolio-items p {
 
 @media only screen and (max-width: 320px){
 	.about-col-2 .about-me {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
 	max-width: 270px;
 	padding: 5px auto;
@@ -572,7 +572,7 @@ div .portfolio-items p {
   }
 
   .about-col-2 .about-me {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.5;
 	
   }
