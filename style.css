@@ -339,13 +339,17 @@ h1.sub-title {
 
 .services-list div {
   background: #262626;
-  padding: 60px;
+  padding: 70px;
   font-size: 13px;
   font-weight: 300;
-    border-radius: 5px 20px 5px;
-
+  border-radius: 5px 20px 5px;
+  
   border-right: 10px;
   transition: background 0.5s, transform 0.5s;
+}
+
+.services-list p {
+  text-align: justify;
 }
 
 .services-list div i {
