@@ -557,11 +557,14 @@ div .portfolio-items p {
   .about-col-2 .about-me {
     font-size: 11px;
     line-height: 1.5;
+	max-width: 280px;
   }
   
   .container {
-	padding: 20px 0;
-  }
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 20px; /* Adds padding to the sides for breathing room */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
 
   .services-list p {
     font-size: 12px;
