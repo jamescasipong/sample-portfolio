@@ -13,8 +13,8 @@ body, html {
 }
 
 body {
-  
   background-color: #080808;
+
 }
 
 
@@ -559,6 +559,9 @@ div .portfolio-items p {
     line-height: 1.5;
   }
   
+  .container {
+	padding: 20px 0;
+  }
 
   .services-list p {
     font-size: 12px;
