@@ -568,6 +568,14 @@ div .portfolio-items p {
   
 }
 
+.about-col-2 p {
+    font-size: 12px;
+  }
+  
+   .tab-contents span, .tab-contents ul li {
+	   font-size: 12px;
+   }
+
 @media only screen and (max-width: 360px) {
   #header .header-text h1 {
     font-size: 50px;
