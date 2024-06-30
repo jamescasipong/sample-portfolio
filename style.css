@@ -429,6 +429,7 @@ h1.sub-title {
    height: 250px;
    background-size: cover;
    background-repeat: no-repeat;
+   margin-bottom: 20px;
    background-position: center;
    border-radius: 10px;
 
