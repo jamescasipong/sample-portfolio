@@ -426,7 +426,7 @@ h1.sub-title {
 
 .portfolio-item img {
   width: 100%;
-   height: auto;
+   height: 250px;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -569,15 +569,29 @@ div .portfolio-items p {
   
 }
 
-@media only screen and (max-width: 600px) {
-	.portfolio-item {
-  display: relative;
-
-}
-
-.portfolio-item img {
+@media only screen and (max-width: 400px) {
 	
+	
+	.portfolio-item img {
+  width: 250px;
+   height: auto;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 10px;
+
 }
+
+.portfolio-items{
+		display: block;
+	}
+	
+	.portfolio-item{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
 }
 
   
