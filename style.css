@@ -587,12 +587,12 @@ div .portfolio-items p {
 		display: block;
 	}
 	
-	.portfolio-item{
+	/**.portfolio-item{
 		align-items: center;
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
-	}
+	}*/
 }
 
   
