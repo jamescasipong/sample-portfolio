@@ -448,12 +448,12 @@ h1.sub-title {
   background-color: #ff004f;
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 25px;
   transition: background-color 0.3s ease, transform 0.15s;
 }
 
-.btn:hover {
-  background-color: #d6004c;
+#portfolio .btn:hover {
+  background-color: #ff4f00;
   transform: scale(1.1, 1.1);
 }
 
