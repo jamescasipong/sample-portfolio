@@ -572,6 +572,10 @@ div .portfolio-items p {
 
 @media only screen and (max-width: 400px) {
 	
+	.services-list div i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 	
 	.portfolio-item img {
   width: 250px;
@@ -601,6 +605,7 @@ div .portfolio-items p {
   #header .header-text h1 {
     font-size: 50px;
   }
+  
 
   .about-col-2 .about-me {
     font-size: 13px;
@@ -612,7 +617,7 @@ div .portfolio-items p {
 	.about-col-2 p {
     font-size: 12px;
   }
-  
+}
 
    
   
