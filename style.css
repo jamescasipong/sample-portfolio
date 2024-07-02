@@ -448,7 +448,7 @@ h1.sub-title {
   background-color: #ff004f;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: background-color 0.3s ease, transform 0.15s;
 }
 
