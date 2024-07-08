@@ -623,6 +623,20 @@ div .portfolio-items p {
 	#header {
 		margin-bottom: 200px;
 	}
+	
+	
+	#services {
+  padding: 0px 0;
+}
+
+#portfolio {
+	margin-top: 100px;
+  padding: 60px 0;
+}
+
+#contact {
+  margin-top: 50px;
+}
 
 
    .tab-contents span, .tab-contents ul li {
