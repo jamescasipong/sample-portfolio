@@ -2,9 +2,13 @@ Sure! Here's a template for a README file for your portfolio website on GitHub:
 
 ---
 
-# Sample Portfolio Website
+# Temporary Portfolio Website
 
 Welcome to my portfolio website repository! This project showcases my skills, projects, and experiences in a visually appealing and interactive manner.
+
+## Note
+
+This portfolio of mine is just temporary that I keep it updated. I will start making new one once I've finished my projects that I'm currently working on. It will be developed using ReactJS & Tailwind CSS with different designs.
 
 ## Description
 
