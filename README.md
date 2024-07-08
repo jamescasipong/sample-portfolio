@@ -8,7 +8,7 @@ Welcome to my portfolio website repository! This project showcases my skills, pr
 
 ## Note
 
-This portfolio of mine is just temporary that I keep it updated. I will start making new one once I've finished my projects that I'm currently working on. It will be developed using ReactJS & Tailwind CSS with different designs.
+This portfolio of mine is just temporary that I keep it updated. I will start making new one once I've finished my personal projects that I'm currently working on. It will be developed using ReactJS & Tailwind CSS with different designs.
 
 ## Description
 
