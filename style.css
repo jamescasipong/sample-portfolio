@@ -620,6 +620,10 @@ div .portfolio-items p {
   }
 
 
+	#header {
+		margin-bottom: 200px;
+	}
+
 
    .tab-contents span, .tab-contents ul li {
 	   font-size: 12px;
