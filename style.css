@@ -729,6 +729,14 @@ div .portfolio-items p {
   }
 }
 
+@media only screen and (min-width: 2560px) {
+	.container {
+	  max-width: 1750px; /* Adjust this value based on your design preferences */
+	  margin: 0 auto; /* Centers the container horizontally */
+	  padding: 0 20px; /* Adds padding to the sides for breathing room */
+	  box-sizing: border-box; /* Ensures padding is included in the total width */
+	}
+}
 @media only screen and (max-width: 600px) {
   /* Adjust header text size */
 
