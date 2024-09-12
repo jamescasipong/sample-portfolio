@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden; /* Prevents horizontal scroll */
   height: 100%;
 
@@ -14,9 +15,7 @@ body, html {
 
 body {
   background-color: #080808;
-
 }
-
 
 .container {
   max-width: 1500px; /* Adjust this value based on your design preferences */
@@ -31,7 +30,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 2px;
-  opacity: 0.5;  /* Width of the scrollbar */
+  opacity: 0.5; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -85,19 +84,19 @@ body {
 }
 
 .light-mode #footer {
-
   background-color: #fff;
-}
 }
 
 .light-mode .about-col-1 img,
 .light-mode .portfolio-item img {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .light-mode .services-list div {
-  background: #FF3272;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background: #ff3272;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transition: 0.5s;
 }
 
@@ -113,9 +112,6 @@ body {
   color: #000;
   transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
 }
-
-
-
 
 nav {
   display: flex;
@@ -176,7 +172,6 @@ nav ul li a:hover::after {
   transition: background-color 0.15s, color 0.15s, transform 0.2s ease-in-out;
   display: inline-block;
   text-decoration: none;
-  
 }
 
 .home-buttons a:hover {
@@ -189,16 +184,14 @@ nav ul li a:hover::after {
   0% {
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
-	opacity: 0.2;
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-	opacity 1;
+    opacity: 1;
   }
 }
-
-
 
 .about-col-2 .about-me {
   line-height: 1.5;
@@ -217,7 +210,7 @@ nav ul li a:hover::after {
 }
 
 .header-text p {
-	animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .header-text h1 span {
@@ -279,7 +272,6 @@ nav ul li a:hover::after {
 .about-col-2 p {
   text-align: justify;
   margin-top: 20px;
-  
 }
 
 .tab-links {
@@ -326,7 +318,7 @@ nav ul li a:hover::after {
 
 /* --------- services ---------- */
 #services {
-  padding: 250px 0;
+  padding: 200px 0;
 }
 
 #services h1 {
@@ -354,7 +346,7 @@ h1.sub-title {
   font-size: 13px;
   font-weight: 300;
   border-radius: 5px 20px 5px;
-  
+
   border-right: 10px;
   transition: background 0.5s, transform 0.5s;
 }
@@ -368,8 +360,6 @@ h1.sub-title {
   margin-bottom: 30px;
 }
 
-
-
 .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
@@ -379,7 +369,6 @@ h1.sub-title {
 .services-list h2 {
   display: flex;
   justify-content: center;
-
 }
 
 .services-list div a {
@@ -409,7 +398,6 @@ h1.sub-title {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 10px;
-  
 }
 
 .portfolio-item {
@@ -420,20 +408,20 @@ h1.sub-title {
 }
 
 .portfolio-item .image-contain {
-	border-color: white;
-	display: relative;
+  border-color: white;
+  display: relative;
 }
 
 .portfolio-item img {
   width: 100%;
-   height: 250px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   margin-bottom: 20px;
-   background-position: center;
-   border-radius: 10px;
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-   
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .portfolio-item h3 {
@@ -441,7 +429,6 @@ h1.sub-title {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
 
 #portfolio .btn {
   display: inline-block;
@@ -461,6 +448,7 @@ h1.sub-title {
 /* --------- contact ---------- */
 
 #footer {
+  margin-top: 50px;
   background-color: #080808;
   color: #ff004f;
   text-align: center;
@@ -471,10 +459,9 @@ h1.sub-title {
 }
 
 #footer div {
-	margin-bottom: 10px;
-  }
-  
-  
+  margin-bottom: 10px;
+}
+
 #footer a {
   color: #ff004f;
   text-decoration: none;
@@ -553,46 +540,42 @@ div .portfolio-items p {
   text-align: justify;
 }
 
-@media only screen and (max-width: 320px){
-
-	.about-col-2 .about-me {
+@media only screen and (max-width: 320px) {
+  .about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
-	max-width: 100%;
-	height:auto;
-	padding: 5px auto;
-	}
-	
-	body, html {
-		height: 100%;
-		display: block;
-	}
-  
-  
+    max-width: 100%;
+    height: auto;
+    padding: 5px auto;
+  }
+
+  body,
+  html {
+    height: 100%;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-	
-	.services-list div i {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-	
-	.portfolio-item img {
-  width: 250px;
-   height: auto;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-   border-radius: 10px;
+  .services-list div i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
 
-}
+  .portfolio-item img {
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
 
-.portfolio-items{
-		display: block;
-	}
-	
-	/**.portfolio-item{
+  .portfolio-items {
+    display: block;
+  }
+
+  /**.portfolio-item{
 		align-items: center;
 		justify-content: center;
 		display: flex;
@@ -600,32 +583,25 @@ div .portfolio-items p {
 	}*/
 }
 
-  
-
 @media only screen and (max-width: 360px) {
   #header .header-text h1 {
     font-size: 50px;
   }
-  
 
   .about-col-2 .about-me {
     font-size: 13px;
     line-height: 1.5;
-	
   }
-    
-	
-	.about-col-2 p {
+
+  .about-col-2 p {
     font-size: 12px;
   }
 
+  #header {
+    margin-bottom: 200px;
+  }
 
-	#header {
-		margin-bottom: 200px;
-	}
-	
-	
-	/**#services {
+  /**#services {
   padding: 0px 0;
 }
 
@@ -634,38 +610,37 @@ div .portfolio-items p {
   padding: 60px 0;
 }
 */
-#contact {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+  #contact {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 
+  .tab-contents span,
+  .tab-contents ul li {
+    font-size: 12px;
+  }
 
-   .tab-contents span, .tab-contents ul li {
-	   font-size: 12px;
-   }
-  
   .container {
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 0 20px; /* Adds padding to the sides for breathing room */
-  box-sizing: border-box; /* Ensures padding is included in the total width */
-}
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding to the sides for breathing room */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+  }
 
   .services-list p {
     font-size: 12px;
   }
-  
-  #services  h2 {
 
+  #services h2 {
     font-size: 20px;
   }
 
   #portfolio .portfolio-item p {
     font-size: 11px;
   }
-  
+
   #portfolio .btn {
-	font-size: 12px;
-	padding: 12px 18px;
+    font-size: 12px;
+    padding: 12px 18px;
   }
 }
 
@@ -674,16 +649,15 @@ div .portfolio-items p {
     max-width: 100%;
     height: auto;
   }
-  
 }
 
 @media only screen and (max-width: 1050px) {
   nav .fa-solid {
     display: block;
   }
-  
+
   .portfolio-item p {
-	  padding: 0;
+    padding: 0;
   }
 
   nav ul .fa-solid {
@@ -691,7 +665,6 @@ div .portfolio-items p {
     top: 25px;
     left: 25px;
     cursor: pointer;
-	
   }
 
   nav ul li {
@@ -730,12 +703,12 @@ div .portfolio-items p {
 }
 
 @media only screen and (min-width: 2560px) {
-	.container {
-	  max-width: 1750px; /* Adjust this value based on your design preferences */
-	  margin: 0 auto; /* Centers the container horizontally */
-	  padding: 0 20px; /* Adds padding to the sides for breathing room */
-	  box-sizing: border-box; /* Ensures padding is included in the total width */
-	}
+  .container {
+    max-width: 1750px; /* Adjust this value based on your design preferences */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds padding to the sides for breathing room */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+  }
 }
 @media only screen and (max-width: 600px) {
   /* Adjust header text size */
@@ -744,8 +717,6 @@ div .portfolio-items p {
     display: block; /* Change display to block for mobile view */
     clear: both;
   }
-  
-  
 
   #footer {
     color: #ff004f;
@@ -754,13 +725,13 @@ div .portfolio-items p {
     bottom: 0;
     width: 100%;
   }
-  
+
   #footer div {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
   }
-  
+
   #footer p {
-	font-size: 10px;
+    font-size: 10px;
   }
 
   #about .column div {
@@ -874,7 +845,6 @@ div .portfolio-items p {
 
   /* Adjust portfolio item grid */
   .portfolio-items {
-    
   }
 
   /* Adjust portfolio item font size */
